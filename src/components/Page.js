@@ -3,6 +3,9 @@ import Image from "./Image";
 import Footer from "./Footer";
 import images from "../images.json";
 
+//Modals
+import Instructions from "./modals/Instructions";
+
 class Page extends Component {
   constructor() {
     super();
@@ -86,10 +89,36 @@ class Page extends Component {
         <header>
           <nav className="navbar navbar-expand-md navbar-dark bg-dark">
             <div className="container">
-              <h1 id="title" className="navbar-brand mx-auto">
-                <i class="fab fa-react" style={{ color: "#00d8ff" }} /> React
-                Clicky: Dank Memes Edition
-              </h1>
+              <div className="row">
+                <div className="col-12 text-center">
+                  <h1 id="title" className="navbar-brand mx-auto">
+                    <i className="fab fa-react" style={{ color: "#00d8ff" }} />{" "}
+                    React Clicky: Dank Memes Edition
+                  </h1>
+                </div>
+                <div className="w-100" />
+                <div className="col-6">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-block"
+                    data-toggle="modal"
+                    data-target="#instructions"
+                  >
+                    How to Play
+                  </button>
+                </div>
+                <div className="col-6">
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-primary btn-block">
+                      GitHub Repo
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
           </nav>
         </header>
@@ -98,6 +127,7 @@ class Page extends Component {
         <footer className="footer">
           <Footer score={score} highScore={highScore} />
         </footer>
+        <Instructions />
       </div>
     );
   }

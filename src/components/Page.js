@@ -109,7 +109,7 @@ class Page extends Component {
                 </div>
                 <div className="col-6">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/misazander/shufflin"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

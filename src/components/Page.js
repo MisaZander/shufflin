@@ -72,7 +72,6 @@ class Page extends Component {
   };
 
   render() {
-    console.log(this.state);
     const { images, score, highScore } = this.state;
     const imgs = images.map(img => (
       <Image
@@ -95,10 +94,9 @@ class Page extends Component {
           <h1>The Page</h1>
           {imgs}
         </main>
+        <div className="placeholder" />
         <footer className="footer">
-          <div className="container">
-            <Footer score={score} highScore={highScore} />
-          </div>
+          <Footer score={score} highScore={highScore} />
         </footer>
       </div>
     );

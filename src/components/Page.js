@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Image from "./Image";
-import images from "../img/images.json";
+import images from "../images.json";
 
 class Page extends Component {
   constructor() {
@@ -14,7 +14,7 @@ class Page extends Component {
 
   render() {
     const imgs = this.state.images.map(img => (
-      <Image key={img.id} src={"/img/" + img.src} />
+      <Image key={img.id} src={require("../img/" + img.src)} />
     ));
     return (
       <div className="App">

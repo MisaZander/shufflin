@@ -86,14 +86,14 @@ class Page extends Component {
         <header>
           <nav className="navbar navbar-expand-md navbar-dark bg-dark">
             <div className="container">
-              <h1 className="navbar-brand">Clicky: Dank Memes Edition</h1>
+              <h1 id="title" className="navbar-brand mx-auto">
+                <i class="fab fa-react" style={{ color: "#00d8ff" }} /> React
+                Clicky: Dank Memes Edition
+              </h1>
             </div>
           </nav>
         </header>
-        <main className="container text-center">
-          <h1>The Page</h1>
-          {imgs}
-        </main>
+        <main className="container text-center">{imgs}</main>
         <div className="placeholder" />
         <footer className="footer">
           <Footer score={score} highScore={highScore} />

@@ -22,6 +22,25 @@ class Page extends Component {
       return image;
     });
     this.setState({ images: newState });
+    this.randomize();
+  };
+
+  componentDidMount() {
+    this.randomize();
+  }
+
+  randomize = () => {
+    let stateCopy = this.state.images;
+    let newState = [];
+    for (let i = 0; stateCopy.length > 0; i++) {
+      //Yank a random image out of the state. Splice returns an array.
+      let element = stateCopy.splice(
+        Math.floor(Math.random() * stateCopy.length),
+        1
+      );
+      newState[i] = element[0];
+    }
+    this.setState({ images: newState });
   };
 
   render() {

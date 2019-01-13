@@ -40,6 +40,14 @@ class Page extends Component {
       });
       score++;
       if (score > highScore) highScore = score;
+      if (score === 12) {
+        alert("YOU'RE WINNER!");
+        newState = this.state.images.map(image => {
+          image.clicked = false;
+          return image;
+        });
+        score = 0;
+      }
     }
     this.setState({ images: newState, score, highScore });
     this.randomize();

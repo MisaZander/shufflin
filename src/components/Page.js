@@ -14,7 +14,14 @@ class Page extends Component {
   }
 
   onClick = id => {
-    console.log(id);
+    const newState = this.state.images.map(image => {
+      if (image.id === id) {
+        image.clicked = !image.clicked;
+        console.log("Id " + image.id + " is now " + image.clicked);
+      }
+      return image;
+    });
+    this.setState({ images: newState });
   };
 
   render() {

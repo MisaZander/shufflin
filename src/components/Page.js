@@ -14,14 +14,34 @@ class Page extends Component {
   }
 
   onClick = id => {
-    const newState = this.state.images.map(image => {
-      if (image.id === id) {
-        image.clicked = !image.clicked;
-        console.log("Id " + image.id + " is now " + image.clicked);
-      }
-      return image;
-    });
-    this.setState({ images: newState });
+    let { images, score, highScore } = this.state;
+    let newState = [];
+
+    //Obtain the element of the clicked image
+    let clickedImg = images.filter(image => image.id === id);
+
+    if (clickedImg[0].clicked) {
+      //Not unique, game over
+      //Reset all clicked states to false
+      newState = this.state.images.map(image => {
+        image.clicked = false;
+        return image;
+      });
+      score = 0;
+      alert("Game over!");
+    } else {
+      //Unique click. +1
+      newState = this.state.images.map(image => {
+        if (image.id === id) {
+          image.clicked = !image.clicked;
+          //console.log("Id " + image.id + " is now " + image.clicked);
+        }
+        return image;
+      });
+      score++;
+      if (score > highScore) highScore = score;
+    }
+    this.setState({ images: newState, score, highScore });
     this.randomize();
   };
 
@@ -44,6 +64,7 @@ class Page extends Component {
   };
 
   render() {
+    console.log(this.state);
     const { images, score, highScore } = this.state;
     const imgs = images.map(img => (
       <Image

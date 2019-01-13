@@ -7,7 +7,7 @@ const Instructions = () => {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title" id="exampleModalLabel">
-              Modal title
+              How to Play
             </h5>
             <button
               type="button"
@@ -18,17 +18,21 @@ const Instructions = () => {
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div className="modal-body">...</div>
+          <div className="modal-body">
+            <p>
+              Click each image on the screen exactly once. Each unique click
+              earns you one point. If you click the same image twice, it's game
+              over.
+            </p>
+            <p>It can't be that simple right? You'll see...</p>
+          </div>
           <div className="modal-footer">
             <button
               type="button"
-              className="btn btn-secondary"
+              className="btn btn-success"
               data-dismiss="modal"
             >
-              Close
-            </button>
-            <button type="button" className="btn btn-primary">
-              Save changes
+              Okay, Got It!
             </button>
           </div>
         </div>

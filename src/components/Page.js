@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Image from "./Image";
+import Footer from "./Footer";
 import images from "../images.json";
 
 class Page extends Component {
@@ -12,14 +13,38 @@ class Page extends Component {
     };
   }
 
+  onClick = id => {
+    console.log(id);
+  };
+
   render() {
-    const imgs = this.state.images.map(img => (
-      <Image key={img.id} src={require("../img/" + img.src)} />
+    const { images, score, highScore } = this.state;
+    const imgs = images.map(img => (
+      <Image
+        key={img.id}
+        id={img.id}
+        src={require("../img/" + img.src)}
+        onClick={this.onClick}
+      />
     ));
     return (
       <div className="App">
-        <h1>The Page</h1>
-        {imgs}
+        <header>
+          <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+            <div className="container">
+              <h1 className="navbar-brand">Clicky: Dank Memes Edition</h1>
+            </div>
+          </nav>
+        </header>
+        <main className="container text-center">
+          <h1>The Page</h1>
+          {imgs}
+        </main>
+        <footer className="footer">
+          <div className="container">
+            <Footer score={score} highScore={highScore} />
+          </div>
+        </footer>
       </div>
     );
   }

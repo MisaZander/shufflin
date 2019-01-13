@@ -1,50 +1,62 @@
 [
   {
     "id": 1,
-    "src": "AAM.jpg"
+    "src": "AAM.jpg",
+    "clicked": false
   },
   {
     "id": 2,
-    "src": "AngryDuck.jpg"
+    "src": "AngryDuck.jpg",
+    "clicked": false
   },
   {
     "id": 3,
-    "src": "ConfessionBear.jpg"
+    "src": "ConfessionBear.jpg",
+    "clicked": false
   },
   {
     "id": 4,
-    "src": "DisasterGirl.jpg"
+    "src": "DisasterGirl.jpg",
+    "clicked": false
   },
   {
     "id": 5,
-    "src": "EvilRacoon.jpg"
+    "src": "EvilRacoon.jpg",
+    "clicked": false
   },
   {
     "id": 6,
-    "src": "ForeverAlone.jpg"
+    "src": "ForeverAlone.jpg",
+    "clicked": false
   },
   {
     "id": 7,
-    "src": "Fry.jpg"
+    "src": "Fry.jpg",
+    "clicked": false
   },
   {
     "id": 8,
-    "src": "MAM.jpg"
+    "src": "MAM.jpg",
+    "clicked": false
   },
   {
     "id": 9,
-    "src": "Pepe.jpg"
+    "src": "Pepe.jpg",
+    "clicked": false
   },
   {
     "id": 10,
-    "src": "Seal.jpg"
+    "src": "Seal.jpg",
+    "clicked": false
   },
   {
     "id": 11,
-    "src": "Steve.jpg"
+    "src": "Steve.jpg",
+    "clicked": false
   },
   {
     "id": 12,
-    "src": "SuccessKid.jpg"
+    "src": "SuccessKid.jpg",
+    "clicked": false
   }
 ]

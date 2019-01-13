@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/shufflin/static/media/EvilRacoon.eeadedb2.jpg"
   },
   {
-    "revision": "bf2b0e7000efd5a236b2",
+    "revision": "e9ed226aa1b210d3054e",
     "url": "/shufflin/static/css/main.3701d15f.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/shufflin/static/media/DisasterGirl.b6c588eb.jpg"
   },
   {
-    "revision": "bf2b0e7000efd5a236b2",
-    "url": "/shufflin/static/js/main.bf2b0e70.chunk.js"
+    "revision": "e9ed226aa1b210d3054e",
+    "url": "/shufflin/static/js/main.e9ed226a.chunk.js"
   },
   {
     "revision": "64796f06ae1a01fb712675f94002bbe0",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/shufflin/static/media/SuccessKid.2a35acbc.jpg"
   },
   {
-    "revision": "c590c8b4c27df48a6ec83e7cbf368ec7",
+    "revision": "a7d9c62667edfee0570437d85723e73e",
     "url": "/shufflin/index.html"
   }
 ];

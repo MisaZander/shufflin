@@ -1,7 +1,7 @@
 {
   "main.css": "/shufflin/static/css/main.3701d15f.chunk.css",
-  "main.js": "/shufflin/static/js/main.bf2b0e70.chunk.js",
-  "main.js.map": "/shufflin/static/js/main.bf2b0e70.chunk.js.map",
+  "main.js": "/shufflin/static/js/main.e9ed226a.chunk.js",
+  "main.js.map": "/shufflin/static/js/main.e9ed226a.chunk.js.map",
   "static/js/1.f03e8ae8.chunk.js": "/shufflin/static/js/1.f03e8ae8.chunk.js",
   "static/js/1.f03e8ae8.chunk.js.map": "/shufflin/static/js/1.f03e8ae8.chunk.js.map",
   "runtime~main.js": "/shufflin/static/js/runtime~main.dca0eada.js",
@@ -20,6 +20,6 @@
   "static/media/AngryDuck.jpg": "/shufflin/static/media/AngryDuck.55a1bd41.jpg",
   "static/css/main.3701d15f.chunk.css.map": "/shufflin/static/css/main.3701d15f.chunk.css.map",
   "index.html": "/shufflin/index.html",
-  "precache-manifest.2a4d148881875adf464bbbee5b20f740.js": "/shufflin/precache-manifest.2a4d148881875adf464bbbee5b20f740.js",
+  "precache-manifest.289c917cbcb46a05f6c5d9ffd4dfc85a.js": "/shufflin/precache-manifest.289c917cbcb46a05f6c5d9ffd4dfc85a.js",
   "service-worker.js": "/shufflin/service-worker.js"
 }
